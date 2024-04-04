@@ -1,35 +1,28 @@
 <template>
-  <section class="mt-4 border-b-4 border-gray-300 pb-2 pb-4 first:mt-0">
-    <section class="break-inside-avoid">
-      <h2
-        class="mb-2 text-xl font-black tracking-widest text-gray-800 print:font-normal"
-      >
-        Опыт работы
-      </h2>
-      <section
-        v-for="(job, i) of jobs"
-        :key="i"
-        class="mb-2 break-inside-avoid border-b-2 border-gray-300 last:border-b-0"
-      >
-        <header>
-          <h3 class="text-md leading-snugish font-semibold text-gray-800">
-            {{ job.position }}
-          </h3>
-          <p class="text-sm leading-normal text-gray-500">
-            {{ job.start }} &ndash; {{ job.end }} | {{ job.companyName }}
-          </p>
-        </header>
-        <ul class="text-md leading-snugish mt-2 pl-3 font-normal text-gray-700">
-          <li v-for="item in job.list" :key="item">
-            <span class="-translate-y-px select-none text-gray-500">
-              &rsaquo;
-            </span>
-            {{ item }}
-          </li>
-        </ul>
-      </section>
+  <Section title=" Опыт работы">
+    <section
+      v-for="(job, i) of jobs"
+      :key="i"
+      class="mb-2 break-inside-avoid border-b-2 border-gray-300 last:border-b-0"
+    >
+      <header>
+        <h3 class="text-md leading-snugish font-semibold text-gray-800">
+          {{ job.position }}
+        </h3>
+        <p class="text-sm leading-normal text-gray-500">
+          {{ job.start }} &ndash; {{ job.end }} | {{ job.companyName }}
+        </p>
+      </header>
+      <ul class="text-md leading-snugish mt-2 pl-3 font-normal text-gray-700">
+        <li v-for="item in job.list" :key="item">
+          <span class="-translate-y-px select-none text-gray-500">
+            &rsaquo;
+          </span>
+          {{ item }}
+        </li>
+      </ul>
     </section>
-  </section>
+  </Section>
 </template>
 
 <script lang="ts" setup>
