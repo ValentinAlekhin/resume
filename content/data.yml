@@ -45,7 +45,7 @@ experience:
     responsibilities:
       - Разработка сервера на TypeScript и Express с MongoDB и приложение на Vue 3
       - Создание и поддержка GitHub Action CI/CD для проекта
-      - Развертывание на Unix-подобных системах с Docker и Nginx
+      - Развертывание приложения на Unix-подобных системах с Docker и Nginx
       - Введение новых разработчиков в проект
 
 projects:
