@@ -9,8 +9,6 @@
       <Skills :skills="data.skills" />
     </section>
   </Card>
-
-  <ContentRenderer :value="data" />
 </template>
 <script setup lang="ts">
 const data = await queryContent('/data').findOne()
