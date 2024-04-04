@@ -9,7 +9,7 @@
             :key="link.href"
             class="text-md print: mt-1 leading-normal text-black text-gray-500 transition duration-100 ease-in hover:text-gray-700"
           >
-            <a :href="link.href" class="group">
+            <a :href="link.href" target="_blank" class="group">
               <span
                 class="leading-snugish mr-2 text-lg font-semibold text-gray-700"
               >
@@ -31,9 +31,14 @@
 <script setup lang="ts">
 const links = [
   {
-    href: 'https://github.com/ValentinAlekhin',
+    href: 'https://t.me/alekhin_vv',
     name: 'Telegram',
-    text: 'github.com/ValentinAlekhin',
+    text: '@alekhin_vv',
+  },
+  {
+    href: 'mailto:alekhin.v99@gmail.com',
+    name: 'EMail',
+    text: 'alekhin.v99@gmail.com',
   },
   {
     href: 'https://github.com/ValentinAlekhin',

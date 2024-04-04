@@ -6,148 +6,60 @@
       >
         Опыт работы
       </h2>
-      <!--Job 1-->
-      <section class="mb-2 break-inside-avoid border-b-2 border-gray-300">
+      <section
+        v-for="(job, i) of jobs"
+        :key="i"
+        class="mb-2 break-inside-avoid border-b-2 border-gray-300 last:border-b-0"
+      >
         <header>
           <h3 class="text-md leading-snugish font-semibold text-gray-800">
-            Full Stack Web Developer
+            {{ job.position }}
           </h3>
           <p class="text-sm leading-normal text-gray-500">
-            Jun 2018 &ndash; Present | Freelance
+            {{ job.start }} &ndash; {{ job.end }} | {{ job.companyName }}
           </p>
         </header>
         <ul class="text-md leading-snugish mt-2 pl-3 font-normal text-gray-700">
-          <li>
+          <li v-for="item in job.list" :key="item">
             <span class="-translate-y-px select-none text-gray-500">
               &rsaquo;
             </span>
-            Created high-quality, customized web applications from scratch,
-            employing a diverse set of programming languages, including HTML,
-            CSS, JavaScript, PHP, and Python, to fulfill unique client
-            requirements.
-          </li>
-          <li>
-            <span class="-translate-y-px select-none text-gray-500">
-              &rsaquo;
-            </span>
-            Leveraged a range of bleeding edge front-end frameworks like
-            React.js, Nullstack and Vue.js, as well as back-end frameworks such
-            as Node.js and Express, to deliver robust and scalable web
-            solutions.
-          </li>
-          <li>
-            <span class="-translate-y-px select-none text-gray-500">
-              &rsaquo;
-            </span>
-            Designed and implemented databases using SQL and NoSQL technologies
-            like MySQL, PostgreSQL, MongoDB, and Firebase, optimizing data
-            storage and management.
-          </li>
-        </ul>
-      </section>
-      <!-- job 2  -->
-      <section class="mb-2 break-inside-avoid border-b-2 border-gray-300">
-        <header>
-          <h3 class="text-md leading-snugish font-semibold text-gray-800">
-            Computer Repair Technician
-          </h3>
-          <p class="leading-snugish text-sm text-gray-500">
-            Mar 2018 &ndash; Present | Freelance
-          </p>
-        </header>
-        <ul class="text-md leading-snugish mt-2 pl-3 font-normal text-gray-700">
-          <li>
-            <span class="-translate-y-px select-none text-gray-500">
-              &rsaquo;
-            </span>
-            Provided expert computer repair services to individuals and
-            businesses, diagnosing and resolving hardware and software issues
-            effectively.
-          </li>
-          <li>
-            <span class="-translate-y-px select-none text-gray-500">
-              &rsaquo;
-            </span>
-            Demonstrated proficiency across diverse operating systems (Windows,
-            macOS, Linux) and hardware components, offering tailored solutions,
-            including hardware upgrades, software installations, and malware
-            removal.
-          </li>
-        </ul>
-      </section>
-      <!-- job 3 -->
-      <section class="mb-2 break-inside-avoid border-b-2 border-gray-300">
-        <header>
-          <h3 class="text-md leading-snugish font-semibold text-gray-800">
-            Assistant Manager
-          </h3>
-          <p class="leading-snugish text-sm text-gray-500">
-            May 2012 &ndash; Apr 2018 | Pet Food Express
-          </p>
-        </header>
-        <ul class="text-md leading-snugish mt-2 pl-3 font-normal text-gray-700">
-          <li>
-            <span class="-translate-y-px select-none text-gray-500">
-              &rsaquo;
-            </span>
-            Trained and supervised staff in product knowledge, customer
-            engagement, and sales techniques, ensuring a top-notch shopping
-            experience for customers.
-          </li>
-          <li>
-            <span class="-translate-y-px select-none text-gray-500">
-              &rsaquo;
-            </span>
-            Maintained a pristine and organized store environment, fostering
-            maximum customer satisfaction.
-          </li>
-          <li>
-            <span class="-translate-y-px select-none text-gray-500">
-              &rsaquo;
-            </span>
-            Demonstrated deep expertise in the pet food industry, including
-            trends, products, and competitors, providing customers with informed
-            recommendations and advice.
-          </li>
-        </ul>
-      </section>
-      <!-- job 4 -->
-      <section class="mb-2 break-inside-avoid border-b-0 border-gray-300">
-        <header>
-          <h3 class="text-md leading-snugish font-semibold text-gray-800">
-            Executive Assistant
-          </h3>
-          <p class="leading-snugish text-sm text-gray-500">
-            Jun 2009 &ndash; Dec 2011 | 360 Custom Closets and Cabinets
-          </p>
-        </header>
-        <ul class="text-md leading-snugish mt-2 pl-3 font-normal text-gray-700">
-          <li>
-            <span class="-translate-y-px select-none text-gray-500">
-              &rsaquo;
-            </span>
-            Provided high-level administrative support to the small business
-            executive, managing schedules, travel arrangements, and coordinating
-            meetings and events.
-          </li>
-          <li>
-            <span class="-translate-y-px select-none text-gray-500">
-              &rsaquo;
-            </span>
-            Managed communication on behalf of the executive, including
-            answering phone calls and emails, ensuring timely and professional
-            responses to inquiries and requests.
-          </li>
-          <li>
-            <span class="-translate-y-px select-none text-gray-500">
-              &rsaquo;
-            </span>
-            Maintained relationships with vendors, clients, and external
-            stakeholders, ensuring professionalism and alignment with the
-            business's values.
+            {{ item }}
           </li>
         </ul>
       </section>
     </section>
   </section>
 </template>
+
+<script lang="ts" setup>
+const jobs = [
+  {
+    position: 'Fullstack Developer',
+    start: 'Ноябрь 2021',
+    end: 'По настоящее время',
+    companyName: 'Нетсофт',
+    list: [
+      'Разработка микросервисов на NestJs с использованием gRpc',
+      'Внедрение бизнес-процесса на движке Zeebe',
+      'Поддержка монолитного сервера на NestJs',
+      'Разработка приложения на Nuxt 2 для управления медиа-контентом',
+      'Проектирование и разработка приложения на Electron + Nuxt 3 для отображения медиаконтента',
+      'Автоматизация сборок Electron с помощью GitLab Ci',
+      'Разработка панели администратора на React-Admin',
+    ],
+  },
+  {
+    position: 'Fullstack Developer',
+    start: 'Май 2021',
+    end: 'Октябрь 2021',
+    companyName: 'ОПЗ МЭИ',
+    list: [
+      'Разработка сервера на TypeScript и Express с MongoDB и приложение на Vue 3',
+      'Создание и поддержка GitHub Action CI/CD для проекта',
+      'Развертывание на Unix-подобных системах с Docker и Nginx',
+      'Введение новых разработчиков в проект',
+    ],
+  },
+]
+</script>

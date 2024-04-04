@@ -17,7 +17,7 @@
             <li
               v-for="item of list"
               :key="item"
-              class="mr-1.6 print:border-inset mb-1 bg-gray-800 p-1.5 leading-relaxed text-white print:bg-white"
+              class="print:border-inset mb-1 mr-2 bg-gray-800 p-1.5 px-3 leading-relaxed text-white print:bg-white"
             >
               {{ item }}
             </li>
@@ -28,5 +28,26 @@
   </section>
 </template>
 <script setup lang="ts">
-const list = ['HTML5', 'CSS3']
+const list = [
+  'JavaScript',
+  'TypeScript',
+  'Golang',
+  'HTML',
+  'CSS',
+  'Nuxt 2/3',
+  'React',
+  'Electron',
+  'WebSocket',
+  'SCSS',
+  'Tailwind',
+  'NestJs',
+  'PostgreSQL',
+  'MongoDB',
+  'GRpc',
+  'Docker',
+  'Nginx',
+  'Linux',
+  'GitHub Actions',
+  'GitLab Ci',
+]
 </script>

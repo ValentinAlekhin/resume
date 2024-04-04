@@ -3,9 +3,9 @@
     class="mb-2 inline-flex w-full items-baseline justify-between border-b-4 border-gray-300 align-top"
   >
     <section class="block">
-      <h1 class="mb-0 text-5xl font-bold text-gray-700">Валентин Алехин</h1>
+      <h1 class="mb-0 text-5xl font-bold text-gray-700">Алехин Валентин</h1>
       <h2 class="leading-snugish m-0 ml-2 text-2xl font-semibold text-gray-700">
-        Full Stack Web Development
+        Fullstack Developer
       </h2>
       <h3
         class="leading-snugish m-0 ml-2 mt-2 text-xl font-semibold text-gray-500"
