@@ -3,7 +3,7 @@
     <section
       v-for="(job, i) of jobs"
       :key="i"
-      class="mb-2 break-inside-avoid border-b-2 border-gray-300 last:border-b-0"
+      class="mb-2 break-inside-avoid border-b-2 border-gray-300 pb-2 last:border-b-0"
     >
       <header>
         <h3 class="text-md leading-snugish font-semibold text-gray-800">

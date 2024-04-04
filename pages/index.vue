@@ -8,6 +8,7 @@
       <Links />
       <Summary />
       <Experience />
+      <PetProjects />
       <Skills />
     </section>
   </Card>
