@@ -6,12 +6,12 @@
       class="mb-2 break-inside-avoid border-b-2 border-gray-300 pb-2 last:border-b-0"
     >
       <header>
-        <h3 class="text-md leading-snugish font-semibold text-gray-800">
+        <h3 class="font-semibold text-gray-800">
           <a :href="project.href" target="_blank">
             <span class="mr-2 font-semibold"> {{ project.name }}</span>
 
             <span
-              class="print: inline-block font-normal text-black text-gray-500 transition duration-100 ease-in group-hover:text-gray-700 print:text-black"
+              class="print: inline-block font-normal text-gray-500 transition duration-100 ease-in group-hover:text-gray-700 print:text-black"
             >
               ↗
             </span>
@@ -23,17 +23,17 @@
           :href="project.source"
           class="text-sm leading-normal text-gray-500"
         >
-          <spam class="mr-2">Исходный код</spam>
+          <span class="mr-2">Исходный код</span>
 
           <span
-            class="print: inline-block font-normal text-black text-gray-500 transition duration-100 ease-in group-hover:text-gray-700 print:text-black"
+            class="inline-block font-normal text-gray-500 transition duration-100 ease-in group-hover:text-gray-700 print:text-black"
           >
             ↗
           </span>
         </a>
       </header>
 
-      <p class="text-md leading-snugish mt-2 text-gray-700">
+      <p class="mt-2 text-gray-700">
         {{ project.description }}
       </p>
     </section>
