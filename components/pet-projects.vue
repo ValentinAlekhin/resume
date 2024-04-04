@@ -1,7 +1,7 @@
 <template>
   <Section title="Личные проекты">
     <section
-      v-for="(project, i) of list"
+      v-for="(project, i) of projects"
       :key="i"
       class="mb-2 break-inside-avoid border-b-2 border-gray-300 pb-2 last:border-b-0"
     >
@@ -41,20 +41,12 @@
 </template>
 
 <script lang="ts" setup>
-const list = [
-  {
-    name: 'Приложение для ведения личного бюджета',
-    href: 'https://budget.nikadmitrieva.ru/',
-    description:
-      'Цель приложения — помочь мне вести личный бюджет в удобной для меня форме. На данный момент оно позволяет записывать доходы и расходы, просматривать и редактировать записи и наблюдать за статистикой. Фронтенд написан на Nuxt 3, бекенд сейчас работает на NodeJs(NestJs), но переписывается на Golang(Gin).',
-    source: 'https://github.com/ValentinAlekhin/budget',
-  },
-  {
-    name: 'Сайт портофилио фотографа',
-    href: 'https://nikadmitrieva.ru/',
-    description:
-      'Портфолио для девушки фотографа. Клиент написан на Nuxt 2 в качетве бека выбран Strapi.',
-    source: 'https://github.com/ValentinAlekhin/nikadmitrieva-new',
-  },
-]
+const { projects } = defineProps<{
+  projects: Array<{
+    name: string
+    href: string
+    description: string
+    source: string
+  }>
+}>()
 </script>
