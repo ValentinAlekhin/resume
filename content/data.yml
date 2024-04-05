@@ -23,7 +23,7 @@ summary: Веб-разработчик полного цикла с опытом
 experience:
   - profession: Fullstack Developer
     start: Ноябрь 2021
-    end: По настоящее время
+    end: Настоящее время
     company: Нетсофт
     responsibilities:
       - Разработка микросервисов на NestJs с использованием gRpc
