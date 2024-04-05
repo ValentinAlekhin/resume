@@ -53,9 +53,9 @@ projects:
       бекенд сейчас работает на NodeJs(NestJs), но переписывается на Golang(Gin).
     source: https://github.com/ValentinAlekhin/budget
 
-  - name: Сайт портофилио фотографа
+  - name: Сайт портфолио фотографа
     href: https://nikadmitrieva.ru/
-    description: Портфолио для девушки фотографа. Клиент написан на Nuxt 2 в качетве
+    description: Портфолио для девушки фотографа. Клиент написан на Nuxt 2 в качестве
       бека выбран Strapi.
     source: https://github.com/ValentinAlekhin/nikadmitrieva-new
 
