@@ -65,16 +65,16 @@ skills:
   - Golang
   - HTML
   - CSS
+  - SCSS
+  - Tailwind
   - Nuxt 2/3
   - React
   - Electron
-  - WebSocket
-  - SCSS
-  - Tailwind
   - NestJs
+  - WebSocket
+  - GRpc
   - PostgreSQL
   - MongoDB
-  - GRpc
   - Docker
   - Nginx
   - Linux
