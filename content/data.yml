@@ -31,7 +31,7 @@ experience:
       - Поддержка монолитного сервера на NestJs
       - Разработка приложения на Nuxt 2 для управления медиаконтентом
       - Проектирование и разработка приложения на Electron + Nuxt 3 для отображения медиаконтента
-      - Автоматизация сборок Electron с помощью GitLab Ci
+      - Автоматизация сборок с помощью GitLab Ci
       - Разработка панели администратора на React-Admin
 
   - profession: Fullstack Developer
@@ -40,23 +40,26 @@ experience:
     company: ОПЗ МЭИ
     responsibilities:
       - Разработка сервера на TypeScript и Express с MongoDB и приложение на Vue 3
-      - Создание и поддержка GitHub Action CI/CD для проекта
-      - Развертывание приложения на Unix-подобных системах с Docker и Nginx
+      - Создание и настройка CI/CD с помощью GitHub Actions
+      - Развертывание приложений на Unix-системах с Docker и Nginx
       - Введение новых разработчиков в проект
 
 projects:
+  - name: Библиотека на Golang для работы с устройствами Wiren Board
+    href: https://valentinalekhin.github.io/wb-go/
+    description: Цель — удобная библиотека для интеграторов и разработчиков, 
+      позволяющая писать скрипты управления устройствами Wiren Board на Go с автодополнением, 
+      тестированием и отладкой.
+    source: https://github.com/ValentinAlekhin/wb-go
+
   - name: Приложение для ведения личного бюджета
     href: https://budget.nikadmitrieva.ru/
-    description: Цель приложения — помочь мне вести личный бюджет в удобной для меня
-      форме. На данный момент оно позволяет записывать доходы и расходы, просматривать
-      и редактировать записи и наблюдать за статистикой. Фронтенд написан на Nuxt 3,
-      бекенд сейчас работает на NodeJs(NestJs), но переписывается на Golang(Gin).
+    description: "Функциональное приложение для управления личными финансами: запись доходов/расходов, статистика, редактирование записей. Фронтенд — Nuxt 3, бекенд — NodeJs (переписывается на Go)."
     source: https://github.com/ValentinAlekhin/budget
 
   - name: Сайт портфолио фотографа
     href: https://nikadmitrieva.ru/
-    description: Портфолио для девушки фотографа. Клиент написан на Nuxt 2 в качестве
-      бека выбран Strapi.
+    description: Креативное портфолио, созданное для фотографа. Используются Nuxt 2 для фронтенда и Strapi для бэкенда.
     source: https://github.com/ValentinAlekhin/nikadmitrieva-new
 
 skills:
