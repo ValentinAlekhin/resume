@@ -12,8 +12,11 @@ links:
     name: Telegram
     text: "@alekhin_vv"
   - href: mailto:alekhin.v99@gmail.com
-    name: EMail
+    name: Gmail
     text: alekhin.v99@gmail.com
+  - href: mailto:alekhin.dev@ya.ru
+    name: Yandex
+    text: alekhin.dev@ya.ru
   - href: https://github.com/ValentinAlekhin
     name: GitHub
     text: github.com/ValentinAlekhin
@@ -26,10 +29,13 @@ experience:
     end: Настоящее время
     company: Нетсофт
     responsibilities:
+      - Организовывал задачи для команды, включая их нарезку, распределение приоритетов и контроль выполнения
+      - Помогал фронтенд и бэкенд-разработчикам в решении технических задач
+      - Наставлял менее опытных коллег, проводил код-ревью и способствовал их профессиональному росту
       - Разработка микросервисов на NestJs с использованием gRpc
       - Внедрение бизнес-процесса на движке Zeebe
       - Поддержка монолитного сервера на NestJs
-      - Разработка приложения на Nuxt 2 для управления медиаконтентом
+      - Проективрование и разработка приложения на Nuxt 2 для управления медиаконтентом
       - Проектирование и разработка приложения на Electron + Nuxt 3 для отображения медиаконтента
       - Автоматизация сборок с помощью GitLab Ci
       - Разработка панели администратора на React-Admin
