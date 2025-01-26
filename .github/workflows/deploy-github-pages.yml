@@ -22,7 +22,7 @@ jobs:
 
       - name: Install and Build 🔧
         run: |
-          pnpm ci
+          pnpm install
           pnpm generate
 
       - name: Deploy 🚀
